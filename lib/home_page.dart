@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Colors.blue, Colors.deepPurple]),
+                  colors: [Color(0xFF006663), Color(0xFF111111)]),
             ),
             child: Padding(
               padding: EdgeInsets.all(15),
@@ -84,9 +84,9 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => DataLoadingPage()));
                     },
-                    child: const Text("Let's Start",style: TextStyle(color: Color(0xFF304675)),),
+                    child: const Text("Let's Start",style: TextStyle(color: Colors.black),),
                     style: ElevatedButton.styleFrom(
-                        side: BorderSide(width: 2,color:Color(0xFF304675) ),
+                        side: BorderSide(width: 2,color:Color(0xFF006663) ),
                         primary: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
